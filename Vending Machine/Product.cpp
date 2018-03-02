@@ -4,15 +4,20 @@
 
 Product::Product(std::string ProdName, int ProductMV)
 {
-	Productname = ProdName;
-	ProductMoneyValue = ProductMV;
+	m_productName = ProdName;
+	m_productMoneyValue = ProductMV;
 	 
+}
+
+Product::Product(std::string ProdName)
+{
+	m_productName = ProdName;
 }
 
 std::string Product::GetProductDetails()
 {
-	ProductDetails = Productname + " has the value of " + std::to_string(ProductMoneyValue);
-	return ProductDetails;
+	m_productDetails = m_productName + " has the value of " + std::to_string(m_productMoneyValue);
+	return m_productDetails;
 }
 
 Product::~Product()
