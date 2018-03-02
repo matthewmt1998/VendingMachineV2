@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include "Money.h"
+
+Money::Money()
+{
+
+}
+Money::Money(int monetaryv)
+{
+	monetaryValue = monetaryv;
+}
+
+Money::~Money()
+{
+}
+
+int Money::getMonetaryValue() {
+	return monetaryValue;
+}
+
+bool Money::operator==(const Money & obj)
+{
+	return false;
+}
+
+bool Money::compare(const Money & obj)
+{
+	return ;
+}
+
