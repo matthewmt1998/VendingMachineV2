@@ -21,8 +21,21 @@ namespace ProductTestSystem
 		TEST_METHOD(Product_Name_And_Product_Value)
 		{
 			Product prod = Product().ProdName("Coke").ProdVal(100);
-			std::string ExpectedProductNameAndValue = "Coke has the value of 100";
-			Assert::AreEqual(ExpectedProductNameAndValue, prod.GetProductDetails());
+			std::string ExpectedProductName = "Coke";
+			int ExpectedProductValue = 100;
+			Assert::AreEqual(ExpectedProductName, prod.GetProductName());
+			Assert::AreEqual(ExpectedProductValue, prod.GetProductValue());
+		}
+
+		TEST_METHOD(Product_Name_And_Product_Value_And_Description)
+		{
+			Product prod = Product().ProdName("Coke").ProdVal(100).ProdDesc("Description");
+			std::string ExpectedProductName = "Coke";
+			std::string ExpectedProductDesc = "Description";
+			int ExpectedProductValue = 100;
+			Assert::AreEqual(ExpectedProductName, prod.GetProductName());
+			Assert::AreEqual(ExpectedProductValue, prod.GetProductValue());
+			Assert::AreEqual(ExpectedProductDesc, prod.GetProductDescription());
 		}
 
 		TEST_METHOD(Product_Details_All_Undefined)
@@ -32,10 +45,31 @@ namespace ProductTestSystem
 			Assert::AreEqual(ExpectedDescription, prod.GetProductDetails());
 		}
 
-		TEST_METHOD(Product_Details_UndefinedId_OtherArguementsFilled)
+		TEST_METHOD(Product_Details_ID_Defined_AllOthersUndefined)
 		{
-			Product prod = Product().ProdName("Coke").ProdVal(100).ProdDesc("ProductDescription");
-			std::string ExpectedDescription = "Undefined_Id : Coke has the value of 100 Product Desc: ProductDescription";
+			Product prod = Product().ProdId("Coke_ID");
+			std::string ExpectedDescription = "Coke_ID : Undefined_Drink has the value of 0 Product Desc: Undefined_Drink_Description";
+			Assert::AreEqual(ExpectedDescription, prod.GetProductDetails());
+		}
+		
+		TEST_METHOD(Product_Details_ID_Defined_And_NameDefined_Coke_ValueAndDescUndefined)
+		{
+			Product prod = Product().ProdId("Coke_ID").ProdName("Coke");
+			std::string ExpectedDescription = "Coke_ID : Coke has the value of 0 Product Desc: Undefined_Drink_Description";
+			Assert::AreEqual(ExpectedDescription, prod.GetProductDetails());
+		}
+
+		TEST_METHOD(Product_Details_ID_Defined_And_NameDefined_Coke_ValueDefined_DescUndefined)
+		{
+			Product prod = Product().ProdId("Coke_ID").ProdName("Coke").ProdVal(100);
+			std::string ExpectedDescription = "Coke_ID : Coke has the value of 100 Product Desc: Undefined_Drink_Description";
+			Assert::AreEqual(ExpectedDescription, prod.GetProductDetails());
+		}
+
+		TEST_METHOD(Product_Details_All_Defined)
+		{
+			Product prod = Product().ProdId("Coke_ID").ProdName("Coke").ProdVal(100).ProdDesc("ProductDescription");
+			std::string ExpectedDescription = "Coke_ID : Coke has the value of 100 Product Desc: ProductDescription";
 			Assert::AreEqual(ExpectedDescription, prod.GetProductDetails());
 		}
 

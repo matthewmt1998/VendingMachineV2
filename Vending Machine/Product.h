@@ -11,6 +11,8 @@ public:
 	Product& ProdVal(const int ProductMV = 0);
 	Product& ProdDesc(const std::string ProdDescription);
 	std::string GetProductName();
+	int GetProductValue();
+	std::string GetProductDescription();
 	std::string GetProductDetails();
 	~Product();
 	
