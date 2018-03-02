@@ -68,14 +68,3 @@ std::string Product::GetProductDetails()
 	m_productDetails = m_productId + " : " + m_productName + " has the value of " + std::to_string(m_productMoneyValue) + " Product Desc: " + m_productDescription;
 	return m_productDetails;
 }
-
-
-
-//TODO
-/*
-
-Unit 
-
-Product ID!!! 
-
-*/

@@ -8,7 +8,7 @@ public:
 	Product();
 	Product& ProdId(const std::string ProductIDentifier);
 	Product& ProdName(const std::string ProdName);
-	Product& ProdVal(const int ProductMV = 0);
+	Product& ProdVal(const int ProductMV);
 	Product& ProdDesc(const std::string ProdDescription);
 	std::string GetProductName();
 	int GetProductValue();
