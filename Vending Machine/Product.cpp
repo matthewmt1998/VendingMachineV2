@@ -33,9 +33,9 @@ std::string Product::GetProductName()
 	return m_productName;
 }
 
-int Product::GetProductValue()
+Money Product::GetProductValue()
 {
-	return m_productMoneyValue;
+	return Money(m_productMoneyValue);
 }
 std::string Product::GetProductDescription()
 {

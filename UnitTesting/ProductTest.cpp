@@ -24,7 +24,7 @@ namespace ProductTestSystem
 			std::string ExpectedProductName = "Coke";
 			int ExpectedProductValue = 100;
 			Assert::AreEqual(ExpectedProductName, prod.GetProductName());
-			Assert::AreEqual(ExpectedProductValue, prod.GetProductValue());
+			Assert::AreEqual(ExpectedProductValue, prod.GetProductValue().GetMonetaryValue());
 		}
 
 		TEST_METHOD(Product_Name_And_Product_Value_And_Description)
@@ -34,7 +34,7 @@ namespace ProductTestSystem
 			std::string ExpectedProductDesc = "Description";
 			int ExpectedProductValue = 100;
 			Assert::AreEqual(ExpectedProductName, prod.GetProductName());
-			Assert::AreEqual(ExpectedProductValue, prod.GetProductValue());
+			Assert::AreEqual(ExpectedProductValue, prod.GetProductValue().GetMonetaryValue());
 			Assert::AreEqual(ExpectedProductDesc, prod.GetProductDescription());
 		}
 

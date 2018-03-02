@@ -159,6 +159,7 @@
     <ClCompile Include="ChangeAvailableTest.cpp" />
     <ClCompile Include="MoneyControllerTest.cpp" />
     <ClCompile Include="PaymentFactoryTest.cpp" />
+    <ClCompile Include="ProductManagerTests.cpp" />
     <ClCompile Include="ProductTest.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
