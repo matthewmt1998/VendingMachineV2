@@ -4,7 +4,7 @@ class Money
 public:
 	Money();
 	Money(int monetaryv);
-	int getMonetaryValue();
+	int GetMonetaryValue();
 	~Money();
 	virtual bool operator ==(const Money &obj);
 	virtual bool compare(const Money &obj);

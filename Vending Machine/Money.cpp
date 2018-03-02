@@ -14,7 +14,7 @@ Money::~Money()
 {
 }
 
-int Money::getMonetaryValue() {
+int Money::GetMonetaryValue() {
 	return monetaryValue;
 }
 

@@ -13,16 +13,30 @@ namespace ProductTestSystem
 
 		TEST_METHOD(Product_Name)
 		{
-			Product*GrabThis = new Product("Coke");
+			Product prod = Product().ProdName("Coke");
 			std::string ExpectedProductName = "Coke";
-			Assert::AreEqual(ExpectedProductName, GrabThis->GetProductDetails());
+			Assert::AreEqual(ExpectedProductName, prod.GetProductName());
 		}
 
 		TEST_METHOD(Product_Name_And_Product_Value)
 		{
-			Product*GrabThis = new Product("Coke", 100);
+			Product prod = Product().ProdName("Coke").ProdVal(100);
 			std::string ExpectedProductNameAndValue = "Coke has the value of 100";
-			Assert::AreEqual(ExpectedProductNameAndValue, GrabThis->GetProductDetails());
+			Assert::AreEqual(ExpectedProductNameAndValue, prod.GetProductDetails());
+		}
+
+		TEST_METHOD(Product_Details_All_Undefined)
+		{
+			Product prod = Product();
+			std::string ExpectedDescription = "Undefined_Id : Undefined_Drink has the value of 0 Product Desc: Undefined_Drink_Description";
+			Assert::AreEqual(ExpectedDescription, prod.GetProductDetails());
+		}
+
+		TEST_METHOD(Product_Details_UndefinedId_OtherArguementsFilled)
+		{
+			Product prod = Product().ProdName("Coke").ProdVal(100).ProdDesc("ProductDescription");
+			std::string ExpectedDescription = "Undefined_Id : Coke has the value of 100 Product Desc: ProductDescription";
+			Assert::AreEqual(ExpectedDescription, prod.GetProductDetails());
 		}
 
 
