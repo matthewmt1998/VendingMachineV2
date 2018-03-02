@@ -21,5 +21,24 @@ namespace PaymentFactoryTest
 			Assert::IsTrue(result);
 		}
 		
+		TEST_METHOD(payment_factory_card_test)
+		{
+			PaymentFactory pf = PaymentFactory();
+			Money expectedValue = Money(10);
+			pf.Card(10);
+			pf.InsertedMonetaryValue();
+			bool result = expectedValue == pf.InsertedMonetaryValue();
+			Assert::IsTrue(result);
+		}
+
+		TEST_METHOD(payment_factory_Contactless_test)
+		{
+			PaymentFactory pf = PaymentFactory();
+			Money expectedValue = Money(10);
+			pf.Contactless(10);
+			pf.InsertedMonetaryValue();
+			bool result = expectedValue == pf.InsertedMonetaryValue();
+			Assert::IsTrue(result);
+		}
 	};
 }

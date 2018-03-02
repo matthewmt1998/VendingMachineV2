@@ -5,13 +5,13 @@ class PaymentFactory
 public:
 	PaymentFactory();
 	int Cash(int InsertedCash);
-	int Card();
-	int Contactless();
+	int Card(int InsertedCard);
+	int Contactless(int InsertedContactless);
 	Money InsertedMonetaryValue();
 	~PaymentFactory();
 	
 private:
-	int m_insertedcash;
+	int m_insertedMoney;
 	bool m_PossibleChangeState;
 	Money InsertedMoney;
 };
