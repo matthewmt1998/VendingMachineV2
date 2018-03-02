@@ -14,10 +14,10 @@ namespace PaymentFactoryTest
 		TEST_METHOD(payment_factory_cash_test)
 		{
 			PaymentFactory pf = PaymentFactory();
+			Money expectedValue = Money(10);
 			pf.Cash(10);
 			pf.InsertedMonetaryValue();
-			Money ExpectedValue = Money(10);
-			bool result = ExpectedValue == pf.InsertedMonetaryValue();
+			bool result = expectedValue == pf.InsertedMonetaryValue();
 			Assert::IsTrue(result);
 		}
 		

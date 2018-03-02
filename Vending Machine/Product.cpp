@@ -5,13 +5,13 @@
 Product::Product(std::string ProdName, int ProductMV)
 {
 	Productname = ProdName;
-	int  ProductMoneyValue = ProductMV;
+	ProductMoneyValue = ProductMV;
 	 
 }
 
 std::string Product::GetProductDetails()
 {
-	ProductDetails = Productname + " Has the value of " + std::to_string(ProductMoneyValue);
+	ProductDetails = Productname + " has the value of " + std::to_string(ProductMoneyValue);
 	return ProductDetails;
 }
 

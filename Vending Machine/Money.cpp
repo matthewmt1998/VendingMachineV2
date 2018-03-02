@@ -20,11 +20,11 @@ int Money::getMonetaryValue() {
 
 bool Money::operator==(const Money & obj)
 {
-	return false;
+	return (monetaryValue == obj.monetaryValue) && (monetaryValue == obj.monetaryValue);
 }
 
 bool Money::compare(const Money & obj)
 {
-	return ;
+	return false;
 }
 
