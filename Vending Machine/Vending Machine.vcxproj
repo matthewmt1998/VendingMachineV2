@@ -153,7 +153,6 @@
     <ClInclude Include="ProductManager.h" />
     <ClInclude Include="ReceiptPrint.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Selection.h" />
     <ClInclude Include="SelectionPresentor.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -172,7 +171,6 @@
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductManager.cpp" />
     <ClCompile Include="ReceiptPrint.cpp" />
-    <ClCompile Include="Selection.cpp" />
     <ClCompile Include="SelectionPresentor.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
