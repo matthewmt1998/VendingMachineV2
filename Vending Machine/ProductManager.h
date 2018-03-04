@@ -7,10 +7,9 @@ class ProductManager
 public:
 	ProductManager();
 	~ProductManager();
+	std::vector<Product> Products;
 
 private:
-
-	std::vector<Product> Products;
 
 };
 

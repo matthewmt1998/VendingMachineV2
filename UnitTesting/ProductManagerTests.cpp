@@ -1,5 +1,6 @@
 #pragma once
 #include "stdafx.h"
+#include <iostream>
 #include "CppUnitTest.h"
 #include "../Vending Machine/ProductManager.h"
 #include "../Vending Machine/ProductManager.cpp"
@@ -14,6 +15,8 @@ namespace ProductManagerTestSystem
 		TEST_METHOD(TestName)
 		{
 			ProductManager ProductSelection = ProductManager();
+
+			std::cout << ' ' << ProductSelection.Products.at(1).GetProductDescription();
 			
 		}
 

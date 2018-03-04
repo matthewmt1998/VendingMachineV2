@@ -14,7 +14,7 @@ ProductManager::ProductManager()
 	Products.push_back(P4);
 	Product P5 = Product().ProdId("Pespi_Max_ID").ProdName("Pespi Max").ProdVal(175).ProdDesc("Better than Normal");
 	Products.push_back(P5);
-	Product P6 = Product().ProdId("Diet_Sprite_ID").ProdName("Diet Sprite").ProdVal(0).ProdDesc("Sprite Diet...");
+	Product P6 = Product().ProdId("Diet_Sprite_ID").ProdName("Diet Sprite").ProdVal(150).ProdDesc("Sprite Diet...");
 	Products.push_back(P6);
 }
 
