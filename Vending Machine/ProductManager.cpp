@@ -10,11 +10,11 @@ ProductManager::ProductManager()
 	Products.push_back(P2);
 	Product P3 = Product().ProdId("Pespi_ID").ProdName("Pepsi").ProdVal(150).ProdDesc("Great Tasting Refreshment");
 	Products.push_back(P3);
-	Product P4 = Product().ProdId("").ProdName("").ProdVal(0).ProdDesc("");
+	Product P4 = Product().ProdId("Diet_Coke_ID").ProdName("Diet Coke").ProdVal(125).ProdDesc("Coke... But Diet..");
 	Products.push_back(P4);
-	Product P5 = Product().ProdId("").ProdName("").ProdVal(0).ProdDesc("");
+	Product P5 = Product().ProdId("Pespi_Max_ID").ProdName("Pespi Max").ProdVal(175).ProdDesc("Better than Normal");
 	Products.push_back(P5);
-	Product P6 = Product().ProdId("").ProdName("").ProdVal(0).ProdDesc("");
+	Product P6 = Product().ProdId("Diet_Sprite_ID").ProdName("Diet Sprite").ProdVal(0).ProdDesc("Sprite Diet...");
 	Products.push_back(P6);
 }
 

@@ -13,7 +13,8 @@ namespace ProductManagerTestSystem
 
 		TEST_METHOD(TestName)
 		{
-
+			ProductManager ProductSelection = ProductManager();
+			
 		}
 
 	};
