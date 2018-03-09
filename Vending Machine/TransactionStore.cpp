@@ -4,11 +4,17 @@
 
 TransactionStore::TransactionStore()
 {
+	
 }
 
 
 TransactionStore::~TransactionStore()
 {
+}
+
+std::string TransactionStore::FormatTransaction()
+{
+	return std::string();
 }
 
 //TODO
