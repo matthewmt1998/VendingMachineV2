@@ -21,5 +21,18 @@ namespace ProductManagerTestSystem
 			Assert::AreEqual(ExpectedDescription, SelectionP.m_text);
 		}
 
+		TEST_METHOD(CAN_GET_SPECIFIC_IDs)
+		{
+			SelectionPresentor SelectionP = SelectionPresentor();
+			std::string ExpectedResult = "Coca Cola";
+			Assert::AreEqual(ExpectedResult, SelectionP.m_products[0].GetProductName());
+		}
+
+		TEST_METHOD(CAN_GET_SPECIFIC_Details_I_want)
+		{
+			SelectionPresentor SelectionP = SelectionPresentor();
+			std::string ExpectedResult = "Coca_Cola_ID : Coca Cola has the value of 150 Product Desc: A Classic Refreshing Taste";
+			Assert::AreEqual(ExpectedResult, SelectionP.m_products[0].GetProductDetails());
+		}
 	};
 }

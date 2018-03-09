@@ -7,9 +7,11 @@
 SelectionPresentor::SelectionPresentor()
 {
 	ProductManager();
+	int i = 0;
 	for (auto& prod : m_products)
 	{
 		m_text += prod.GetProductDetails();
+		i++;
 	}
 	
 }
