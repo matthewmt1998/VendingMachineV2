@@ -11,6 +11,21 @@ Transaction::~Transaction()
 {
 }
 
+Money Transaction::MoneyEntered(Money money)
+{
+	return money.GetMonetaryValue();
+}
+
+Money Transaction::CostOfProd()
+{
+	return Money();
+}
+
+std::string Transaction::TransactionStatus()
+{
+	return std::string();
+}
+
 
 //TODO
 /*

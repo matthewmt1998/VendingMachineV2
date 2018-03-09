@@ -1,7 +1,6 @@
 ﻿  TransactionTest.cpp
-  TransactionStoreTest.cpp
-  ProductManagerTests.cpp
-  Generating Code...
-  LINK : C:\Users\ukmtay\Desktop\Apprenticeship and Training and Personal Projects\Vending Machine New - 09.Jan.18\Vending Machine\Debug\UnitTesting.dll not found or not built by the last incremental link; performing full link
+c:\users\ukmtay\desktop\apprenticeship and training and personal projects\vending machine new - 09.jan.18\vending machine\vending machine\transaction.h(6): warning C4584: 'Transaction': base-class 'Money' is already a base-class of 'Product'
+  c:\users\ukmtay\desktop\apprenticeship and training and personal projects\vending machine new - 09.jan.18\vending machine\vending machine\money.h(3): note: see declaration of 'Money'
+  c:\users\ukmtay\desktop\apprenticeship and training and personal projects\vending machine new - 09.jan.18\vending machine\vending machine\product.h(5): note: see declaration of 'Product'
      Creating library C:\Users\ukmtay\Desktop\Apprenticeship and Training and Personal Projects\Vending Machine New - 09.Jan.18\Vending Machine\Debug\UnitTesting.lib and object C:\Users\ukmtay\Desktop\Apprenticeship and Training and Personal Projects\Vending Machine New - 09.Jan.18\Vending Machine\Debug\UnitTesting.exp
   UnitTesting.vcxproj -> C:\Users\ukmtay\Desktop\Apprenticeship and Training and Personal Projects\Vending Machine New - 09.Jan.18\Vending Machine\Debug\UnitTesting.dll
