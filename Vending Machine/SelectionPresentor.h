@@ -1,8 +1,10 @@
 #pragma once
-class SelectionPresentor
+#include "ProductManager.h"
+class SelectionPresentor : public ProductManager 
 {
 public:
 	SelectionPresentor();
+	std::string m_text;
 	~SelectionPresentor();
 };
 

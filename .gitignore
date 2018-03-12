@@ -1,5 +1,8 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
+/.vs/Vending Machine
 /.vs/Vending Machine/v15/Browse.VC.opendb
+/Debug
+/Vending Machine/Debug
+/UnitTesting/Debug/
