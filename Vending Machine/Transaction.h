@@ -1,8 +1,7 @@
 #pragma once
-#include "Money.h"
 #include "ProductManager.h"
 #include <string>
-class Transaction : public Money, Product
+class Transaction : public Product
 {
 public:
 	Transaction();

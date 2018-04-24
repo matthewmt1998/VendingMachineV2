@@ -16,7 +16,7 @@ namespace ProductManagerTestSystem
 		{
 			ProductManager ProductSelection = ProductManager();
 
-			std::cout << ' ' << ProductSelection.Products.at(1).GetProductDescription();
+			std::cout << ' ' << ProductSelection.m_products.at(1).GetProductDescription();
 			
 		}
 

@@ -74,3 +74,39 @@ x64/Debug/Vending Machine\.exe
 x64/Debug/Vending Machine\.ilk
 
 x64/Debug/Vending Machine\.pdb
+
+UnitTesting/x64/Debug/ChangeAvailableTest\.obj
+
+UnitTesting/x64/Debug/MoneyControllerTest\.obj
+
+UnitTesting/x64/Debug/MoneyTest\.obj
+
+UnitTesting/x64/Debug/PaymentFactoryTest\.obj
+
+UnitTesting/x64/Debug/ProductManagerTests\.obj
+
+UnitTesting/x64/Debug/ProductTest\.obj
+
+UnitTesting/x64/Debug/SelectionPresentorTest\.obj
+
+UnitTesting/x64/Debug/stdafx\.obj
+
+UnitTesting/x64/Debug/TransactionStoreTest\.obj
+
+UnitTesting/x64/Debug/UnitTesting\.log
+
+UnitTesting/x64/Debug/UnitTesting\.pch
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/CL\.command\.1\.tlog
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/CL\.read\.1\.tlog
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/CL\.write\.1\.tlog
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/UnitTesting\.lastbuildstate
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/unsuccessfulbuild
+
+UnitTesting/x64/Debug/vc141\.idb
+
+UnitTesting/x64/Debug/vc141\.pdb
