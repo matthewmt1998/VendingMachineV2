@@ -17,7 +17,7 @@ namespace ProductManagerTestSystem
 		TEST_METHOD(Can_SelectionPresentor_GetProductDetails)
 		{
 			SelectionPresentor SelectionP = SelectionPresentor();
-			std::string ExpectedDescription = "Coca_Cola_ID : Coca Cola has the value of 150 Product Desc: A Classic Refreshing TasteSprite_ID : Sprite has the value of 130 Product Desc: A Refreshing LemonadePespi_ID : Pepsi has the value of 150 Product Desc: Great Tasting RefreshmentUndefined_Id : Undefined_Drink has the value of 0 Product Desc: Undefined_Drink_DescriptionUndefined_Id : Undefined_Drink has the value of 0 Product Desc: Undefined_Drink_DescriptionUndefined_Id : Undefined_Drink has the value of 0 Product Desc: Undefined_Drink_Description";
+			std::string ExpectedDescription = "Coca_Cola_ID : Coca Cola has the value of 150 Product Desc: A Classic Refreshing TasteSprite_ID : Sprite has the value of 130 Product Desc: A Refreshing LemonadePespi_ID : Pepsi has the value of 150 Product Desc: Great Tasting RefreshmentDiet_Coke_ID : Diet Coke has the value of 125 Product Desc: Coke... But Diet..Pespi_Max_ID : Pespi Max has the value of 175 Product Desc: Better than NormalDiet_Sprite_ID : Diet Sprite has the value of 150 Product Desc: Sprite Diet...";
 			Assert::AreEqual(ExpectedDescription, SelectionP.m_text);
 		}
 
