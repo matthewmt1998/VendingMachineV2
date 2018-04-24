@@ -1,5 +1,6 @@
 #pragma once
 #include "Money.h"
+#include "TotalTaken.h"
 class PaymentFactory
 {
 public:
@@ -13,6 +14,6 @@ public:
 private:
 	int m_insertedMoney;
 	bool m_PossibleChangeState;
-	Money InsertedMoney;
+	Money InsertedMoney;		
 };
 
