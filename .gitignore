@@ -6,3 +6,71 @@
 /Debug
 /Vending Machine/Debug
 /UnitTesting/Debug/
+
+Vending Machine/Vending Machine\.vcxproj\.user
+
+Vending Machine/x64/Debug/ChangeAvailable\.obj
+
+Vending Machine/x64/Debug/ChangeDispenser\.obj
+
+Vending Machine/x64/Debug/Money\.obj
+
+Vending Machine/x64/Debug/MoneyController\.obj
+
+Vending Machine/x64/Debug/PaymentFactory\.obj
+
+Vending Machine/x64/Debug/Product\.obj
+
+Vending Machine/x64/Debug/ProductDispenser\.obj
+
+Vending Machine/x64/Debug/ProductManager\.obj
+
+Vending Machine/x64/Debug/ReceiptPrint\.obj
+
+Vending Machine/x64/Debug/SelectionPresentor\.obj
+
+Vending Machine/x64/Debug/stdafx\.obj
+
+Vending Machine/x64/Debug/TotalTaken\.obj
+
+Vending Machine/x64/Debug/Transaction\.obj
+
+Vending Machine/x64/Debug/TransactionStore\.obj
+
+Vending Machine/x64/Debug/vc141\.idb
+
+Vending Machine/x64/Debug/vc141\.pdb
+
+Vending Machine/x64/Debug/Vending Machine\.log
+
+Vending Machine/x64/Debug/Vending Machine\.obj
+
+Vending Machine/x64/Debug/Vending Machine\.pch
+
+Vending Machine/x64/Debug/Vending Machine\.res
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/CL\.command\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/CL\.read\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/CL\.write\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/link\.command\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/link\.read\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/link\.write\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/rc\.command\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/rc\.read\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/rc\.write\.1\.tlog
+
+Vending Machine/x64/Debug/Vending Machine\.tlog/Vending Machine\.lastbuildstate
+
+x64/Debug/Vending Machine\.exe
+
+x64/Debug/Vending Machine\.ilk
+
+x64/Debug/Vending Machine\.pdb
