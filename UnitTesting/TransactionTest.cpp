@@ -25,7 +25,7 @@ namespace TransactionTestSystem
 		{
 			Transaction Trans = Transaction();
 			ProductManager PM = ProductManager();
-			PM.
+			//PM.
 		}
 	};
 }

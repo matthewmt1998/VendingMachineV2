@@ -110,3 +110,23 @@ UnitTesting/x64/Debug/UnitTesting\.tlog/unsuccessfulbuild
 UnitTesting/x64/Debug/vc141\.idb
 
 UnitTesting/x64/Debug/vc141\.pdb
+
+UnitTesting/x64/Debug/TransactionTest\.obj
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/link\.command\.1\.tlog
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/link\.read\.1\.tlog
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/link\.write\.1\.tlog
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/UnitTesting\.write\.1u\.tlog
+
+x64/Debug/UnitTesting\.dll
+
+x64/Debug/UnitTesting\.exp
+
+x64/Debug/UnitTesting\.ilk
+
+x64/Debug/UnitTesting\.lib
+
+x64/Debug/UnitTesting\.pdb
