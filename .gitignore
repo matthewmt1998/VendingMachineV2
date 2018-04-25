@@ -134,3 +134,7 @@ x64/Debug/UnitTesting\.pdb
 UnitTesting/x64/Debug/UnitTesting\.Build\.CppClean\.log
 
 Vending Machine/x64/Debug/Vending Machine\.Build\.CppClean\.log
+
+UnitTesting/
+
+Vending Machine/
