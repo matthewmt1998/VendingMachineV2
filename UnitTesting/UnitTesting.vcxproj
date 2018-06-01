@@ -156,6 +156,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CashPaymentTest.cpp" />
     <ClCompile Include="ChangeAvailableTest.cpp" />
     <ClCompile Include="MoneyControllerTest.cpp" />
     <ClCompile Include="PaymentFactoryTest.cpp" />
