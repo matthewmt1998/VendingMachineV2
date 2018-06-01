@@ -1,16 +1,16 @@
-#pragma once
-#include "Payment.h"
-class CashPayment :
-	public Payment
+#include "PaymentMethod.h"
+
+class CashPayment : PaymentMethod
 {
 public:
-	CashPayment();
-	CashPayment(float vInsertedCashValue);
-	float returnPaymentValue();
-	bool NeedofChange() const;
+	CashPayment(int vInsertedCashValue);
+	Money Payment(int paymentValue) override;
+	bool ChangeNeeded() override;
+	int returnPaymentValue() const;
+	
 	~CashPayment();
 private:
-	float m_cashInserted;
+	int m_cashInserted = 0;
 	bool m_PossibleChangeState = true;
 };
 

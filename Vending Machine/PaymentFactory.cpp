@@ -4,16 +4,17 @@
 
 PaymentFactory::PaymentFactory()
 {
-}
 
-
-void PaymentFactory::InsertedMonetaryValue()
-{
 }
 
 PaymentFactory::~PaymentFactory()
 {
 }
+
+//PaymentMethod InsertedPayment()
+//{
+//	return PaymentMethod(1);
+//}
 
 //int PaymentFactory::Cash(int vInsertedCash)
 //{
@@ -26,12 +27,5 @@ PaymentFactory::~PaymentFactory()
 //{
 //	m_PossibleChangeState = false;
 //	m_insertedMoney = vInsertedCard;
-//	return m_insertedMoney;
-//}
-//
-//int PaymentFactory::Contactless(int vInsertedContactless)
-//{
-//	m_PossibleChangeState = false;
-//	m_insertedMoney = vInsertedContactless;
 //	return m_insertedMoney;
 //}

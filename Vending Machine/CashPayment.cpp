@@ -1,35 +1,33 @@
 #include "stdafx.h"
 #include "CashPayment.h"
 
-
-CashPayment::CashPayment()
-{
-}
-
-CashPayment::CashPayment(float vInsertedCashValue)
+CashPayment::CashPayment(int vInsertedCashValue)
 {
 	m_cashInserted = vInsertedCashValue;
+	CashPayment::Payment(m_cashInserted);
 }
 
-float CashPayment::returnPaymentValue()
+Money CashPayment::Payment(int paymentValue)
+{
+	if(!m_cashInserted == 0)
+	{
+		return Money(m_cashInserted);
+	}
+	m_cashInserted = paymentValue;
+	return Money(m_cashInserted);
+}
+
+bool CashPayment::ChangeNeeded()
+{
+	m_PossibleChangeState = true;
+	return m_PossibleChangeState;
+}
+
+int CashPayment::returnPaymentValue() const
 {
 	return m_cashInserted;
-}
-
-bool CashPayment::NeedofChange() const
-{
-	return m_PossibleChangeState;
 }
 
 CashPayment::~CashPayment()
 {
 }
-
-
-//int PaymentFactory::Cash(int vInsertedCash)
-//{
-//	m_PossibleChangeState = true;
-//	m_insertedMoney = vInsertedCash;
-//	return m_insertedMoney;
-//}
-//

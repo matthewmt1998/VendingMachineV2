@@ -1,7 +1,6 @@
 #pragma once
-#include "Payment.h"
-class CardPayment :
-	public Payment
+#include "PaymentMethod.h"
+class CardPayment
 {
 public:
 	CardPayment();
