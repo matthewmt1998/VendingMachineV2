@@ -6,5 +6,7 @@ class CashPayment :
 public:
 	CashPayment();
 	~CashPayment();
+private:
+	float m_cashInserted;
 };
 

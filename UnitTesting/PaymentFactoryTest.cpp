@@ -36,7 +36,7 @@ namespace PaymentFactoryTest
 			PaymentFactory pf = PaymentFactory();
 			Money expectedValue = Money(10);
 			pf.Contactless(10);
-			pf.InsertedMonetaryValue();
+			pf.InsertedMonetaryValue(); 
 			bool result = expectedValue == pf.InsertedMonetaryValue();
 			Assert::IsTrue(result);
 		}

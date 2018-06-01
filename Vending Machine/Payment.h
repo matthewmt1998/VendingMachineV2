@@ -5,5 +5,6 @@ public:
 	Payment();
 	~Payment();
 private:
+
 };
 
