@@ -8,7 +8,7 @@ class PaymentFactory
 public:
 	PaymentFactory();
 	Payment InsertedPayment();
-	void InsertedMonetaryValue();
+	Money InsertedMonetaryValue();
 	~PaymentFactory();
 
 	
