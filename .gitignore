@@ -148,3 +148,23 @@ Vending Machine/x64/Debug/Vending Machine\.tlog/link\.12240\.read\.1\.tlog
 Vending Machine/x64/Debug/Vending Machine\.tlog/link\.12240\.write\.1\.tlog
 
 Vending Machine/x64/Debug/Vending Machine\.tlog/unsuccessfulbuild
+
+UnitTesting/UnitTesting\.vcxproj\.filters
+
+UnitTesting/x64/Debug/CashPaymentTest\.obj
+
+UnitTesting/x64/Debug/UnitTesting\.tlog/link\.delete\.1\.tlog
+
+Vending Machine/Vending Machine\.vcxproj
+
+Vending Machine/Vending Machine\.vcxproj\.filters
+
+Vending Machine/x64/Debug/CardPayment\.obj
+
+Vending Machine/x64/Debug/CashPayment\.obj
+
+Vending Machine/x64/Debug/ContactlessPayment\.obj
+
+Vending Machine/x64/Debug/Payment\.obj
+
+Vending Machine/x64/Debug/PaymentMethod\.obj
