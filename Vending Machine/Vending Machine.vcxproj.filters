@@ -66,6 +66,18 @@
     <ClInclude Include="PaymentFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CardPayment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactlessPayment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CashPayment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaymentMethod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -111,6 +123,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PaymentFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CardPayment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CashPayment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactlessPayment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaymentMethod.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

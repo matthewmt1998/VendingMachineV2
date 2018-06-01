@@ -143,9 +143,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CardPayment.h" />
+    <ClInclude Include="CashPayment.h" />
     <ClInclude Include="ChangeAvailable.h" />
     <ClInclude Include="ChangeDispenser.h" />
+    <ClInclude Include="ContactlessPayment.h" />
     <ClInclude Include="PaymentFactory.h" />
+    <ClInclude Include="PaymentMethod.h" />
     <ClInclude Include="ProductDispenser.h" />
     <ClInclude Include="Money.h" />
     <ClInclude Include="MoneyController.h" />
@@ -162,9 +166,13 @@
     <ClInclude Include="Vending Machine.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CardPayment.cpp" />
+    <ClCompile Include="CashPayment.cpp" />
     <ClCompile Include="ChangeAvailable.cpp" />
     <ClCompile Include="ChangeDispenser.cpp" />
+    <ClCompile Include="ContactlessPayment.cpp" />
     <ClCompile Include="PaymentFactory.cpp" />
+    <ClCompile Include="PaymentMethod.cpp" />
     <ClCompile Include="ProductDispenser.cpp" />
     <ClCompile Include="Money.cpp" />
     <ClCompile Include="MoneyController.cpp" />
