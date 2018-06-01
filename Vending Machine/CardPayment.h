@@ -1,12 +1,13 @@
 #pragma once
 #include "PaymentMethod.h"
-class CardPayment
+class CardPayment : PaymentMethod
 {
 public:
-	CardPayment();
+	CardPayment(int paymentValue);
+	Money Payment(int paymentValue) override;
+	int returnPaymentValue() override;
 	~CardPayment();
 private:
 	int m_cardInserted;
-	bool m_PossibleChangeState = false;
 };
 

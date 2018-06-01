@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "CashPayment.h"
 
-CashPayment::CashPayment(int vInsertedCashValue)
+CashPayment::CashPayment(int paymentValue)
 {
-	m_cashInserted = vInsertedCashValue;
+	m_cashInserted = paymentValue;
 	CashPayment::Payment(m_cashInserted);
 }
 
@@ -19,11 +19,10 @@ Money CashPayment::Payment(int paymentValue)
 
 bool CashPayment::ChangeNeeded()
 {
-	m_PossibleChangeState = true;
-	return m_PossibleChangeState;
+	return true;
 }
 
-int CashPayment::returnPaymentValue() const
+int CashPayment::returnPaymentValue()
 {
 	return m_cashInserted;
 }

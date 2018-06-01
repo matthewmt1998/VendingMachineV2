@@ -1,15 +1,14 @@
 #pragma once
 #include "PaymentMethod.h"
-class ContactlessPayment
+class ContactlessPayment : PaymentMethod
 {
 public:
 	ContactlessPayment();
 	ContactlessPayment(int vInsertedConValue);
-	int returnPaymentValue();
-	bool NeedofChange() const;
+	Money Payment(int paymentValue) override;
+	int returnPaymentValue() override;
 	~ContactlessPayment();
 private:
 	int m_ContactInserted;
-	bool m_PossibleChangeState = false;
 };
 

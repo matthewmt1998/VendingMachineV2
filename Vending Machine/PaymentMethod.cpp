@@ -15,6 +15,11 @@ bool PaymentMethod::ChangeNeeded()
 	return false;
 }
 
+int PaymentMethod::returnPaymentValue()
+{
+	return 0;
+}
+
 PaymentMethod::~PaymentMethod()
 {
 }

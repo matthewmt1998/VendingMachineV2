@@ -2,15 +2,20 @@
 #include "ContactlessPayment.h"
 
 
-
-
-ContactlessPayment::ContactlessPayment()
-{
-}
-
 ContactlessPayment::ContactlessPayment(int vInsertedConValue)
 {
 	m_ContactInserted = vInsertedConValue;
+	ContactlessPayment::Payment(m_ContactInserted);
+}
+
+Money ContactlessPayment::Payment(int paymentValue)
+{
+	if (!m_ContactInserted == 0)
+	{
+		return Money(m_ContactInserted);
+	}
+	m_ContactInserted = paymentValue;
+	return Money(m_ContactInserted);
 }
 
 int ContactlessPayment::returnPaymentValue()
@@ -18,20 +23,6 @@ int ContactlessPayment::returnPaymentValue()
 	return m_ContactInserted;
 }
 
-bool ContactlessPayment::NeedofChange() const
-{
-	return m_PossibleChangeState;
-}
-
-
 ContactlessPayment::~ContactlessPayment()
 {
 }
-
-//
-//int PaymentFactory::Contactless(int vInsertedContactless)
-//{
-//	m_PossibleChangeState = false;
-//	m_insertedMoney = vInsertedContactless;
-//	return m_insertedMoney;
-//}

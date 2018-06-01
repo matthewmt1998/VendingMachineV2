@@ -3,10 +3,10 @@
 class CashPayment : PaymentMethod
 {
 public:
-	CashPayment(int vInsertedCashValue);
+	CashPayment(int paymentValue);
 	Money Payment(int paymentValue) override;
 	bool ChangeNeeded() override;
-	int returnPaymentValue() const;
+	int returnPaymentValue() override;
 	
 	~CashPayment();
 private:
