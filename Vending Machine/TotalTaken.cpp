@@ -26,7 +26,6 @@ void TotalTaken::TakeAwayTotalTaken(Money value)
 }
 
 
-//TODO
 /*
 
 RECORD THE TOTAL MONEY TAKEN IN
