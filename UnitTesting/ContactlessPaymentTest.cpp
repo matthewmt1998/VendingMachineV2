@@ -1,8 +1,6 @@
 #pragma once
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "../Vending Machine/PaymentMethod.h"
-#include "../Vending Machine/PaymentMethod.cpp"
 #include "../Vending Machine/ContactlessPayment.h"
 #include "../Vending Machine/ContactlessPayment.cpp"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -13,7 +11,7 @@ namespace ContactlessPaymentTestSystem
 	{
 	public:
 
-		TEST_METHOD(ContactlessPaymentTest_ExpectedIntValueReturned)
+	/*	TEST_METHOD(ContactlessPaymentTest_ExpectedIntValueReturned)
 		{
 			auto contactlessPayment = ContactlessPayment(100);
 			const int expectedValue = 100;
@@ -33,6 +31,6 @@ namespace ContactlessPaymentTestSystem
 			Money expectedValue = Money(100);
 			bool result = expectedValue == contactlessPayment.Payment(100);
 			Assert::IsTrue(result);
-		};
+		};*/
 	};
 }

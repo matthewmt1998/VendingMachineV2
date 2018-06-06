@@ -1,10 +1,6 @@
 #pragma once
 #include "stdafx.h"
 #include "CashPayment.h"
-CashPayment::CashPayment()
-{
-}
-
 CashPayment::CashPayment(int paymentValue)
 {
 	m_cashInserted = paymentValue;
@@ -21,7 +17,7 @@ Money CashPayment::Payment(int paymentValue)
 	return Money(m_cashInserted);
 }
 
-bool CashPayment::ChangeNeeded()
+const bool CashPayment::ChangeNeeded()
 {
 	return true;
 }

@@ -1,8 +1,6 @@
 ﻿#pragma once
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "../Vending Machine/PaymentMethod.h"
-#include "../Vending Machine/PaymentMethod.cpp"
 #include "../Vending Machine/CashPayment.h"
 #include "../Vending Machine/CashPayment.cpp"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -29,9 +27,9 @@ namespace CashPaymentTestSystem
 		};
 		TEST_METHOD(CashPaymentTest_PaymentFunction)
 		{
-			auto cashPayment = CashPayment();
+			auto cashPayment = CashPayment(100);
 			Money expectedValue = Money(100);
-			bool result = expectedValue == cashPayment.Payment(100);
+			bool result = expectedValue == cashPayment.returnPaymentValue();
 			Assert::IsTrue(result);
 		};
 	};

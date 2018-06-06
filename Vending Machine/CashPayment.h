@@ -1,13 +1,14 @@
 #pragma once
 #include "PaymentMethod.h"
 
-class CashPayment : PaymentMethod
+class CashPayment 
+:
+	public PaymentMethod
 {
 public:
-	CashPayment();
 	CashPayment(int paymentValue);
 	Money Payment(int paymentValue) override;
-	bool ChangeNeeded() override;
+	const bool ChangeNeeded() override;
 	int returnPaymentValue() override;
 	~CashPayment();
 
