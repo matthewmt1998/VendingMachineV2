@@ -2,6 +2,9 @@
 #include "stdafx.h"
 #include "ContactlessPayment.h"
 
+ContactlessPayment::ContactlessPayment()
+{
+}
 
 ContactlessPayment::ContactlessPayment(int vInsertedConValue)
 {
@@ -22,6 +25,11 @@ Money ContactlessPayment::Payment(int paymentValue)
 int ContactlessPayment::returnPaymentValue()
 {
 	return m_ContactInserted;
+}
+
+const bool ContactlessPayment::ChangeNeeded()
+{
+	return false;
 }
 
 ContactlessPayment::~ContactlessPayment()

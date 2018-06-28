@@ -2,6 +2,10 @@
 #include "stdafx.h"
 #include "CardPayment.h"
 
+CardPayment::CardPayment()
+{
+}
+
 CardPayment::CardPayment(int paymentValue)
 {
 	m_cardInserted = paymentValue;
@@ -25,6 +29,10 @@ int CardPayment::returnPaymentValue()
 	return m_cardInserted;
 }
 
+const bool CardPayment::ChangeNeeded() 
+{
+	return false;
+}
 
 CardPayment::~CardPayment()
 {

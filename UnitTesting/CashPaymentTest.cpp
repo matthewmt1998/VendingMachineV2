@@ -27,9 +27,9 @@ namespace CashPaymentTestSystem
 		};
 		TEST_METHOD(CashPaymentTest_PaymentFunction)
 		{
-			auto cashPayment = CashPayment(100);
+			auto cashPayment = CashPayment();
 			Money expectedValue = Money(100);
-			bool result = expectedValue == cashPayment.returnPaymentValue();
+			bool result = expectedValue == cashPayment.Payment(100);
 			Assert::IsTrue(result);
 		};
 	};

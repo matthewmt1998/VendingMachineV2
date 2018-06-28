@@ -6,6 +6,7 @@ class CashPayment
 	public PaymentMethod
 {
 public:
+	CashPayment();
 	CashPayment(int paymentValue);
 	Money Payment(int paymentValue) override;
 	const bool ChangeNeeded() override;
