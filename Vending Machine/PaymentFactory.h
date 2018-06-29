@@ -1,6 +1,8 @@
 #pragma once
-#include "Money.h"
-#include "PaymentMethod.h"
+#include "CashPayment.h"
+#include "CardPayment.h"
+#include "ContactlessPayment.h"
+
 
 
 class PaymentFactory
@@ -8,11 +10,8 @@ class PaymentFactory
 public:
 	PaymentFactory();
 	~PaymentFactory();
-
-	
-private:
-	int m_insertedMoney;
-	bool m_PossibleChangeState;
-	Money InsertedMoney;
+	CashPayment CreateCashPayment();
+	CardPayment CreateCardPayment();
+	ContactlessPayment CreateContactlessPayment();
 };
 
