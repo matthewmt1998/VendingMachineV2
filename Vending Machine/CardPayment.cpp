@@ -29,7 +29,7 @@ int CardPayment::returnPaymentValue()
 	return m_cardInserted;
 }
 
-const bool CardPayment::ChangeNeeded() 
+ bool CardPayment::ChangeNeeded() const 
 {
 	return false;
 }

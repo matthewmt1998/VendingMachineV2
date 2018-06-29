@@ -9,7 +9,7 @@ public:
 	CashPayment();
 	CashPayment(int paymentValue);
 	Money Payment(int paymentValue) override;
-	const bool ChangeNeeded() override;
+	 bool ChangeNeeded()const override;
 	int returnPaymentValue() override;
 	~CashPayment();
 

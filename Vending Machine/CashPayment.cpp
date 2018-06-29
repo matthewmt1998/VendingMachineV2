@@ -21,7 +21,7 @@ Money CashPayment::Payment(int paymentValue)
 	return Money(m_cashInserted);
 }
 
-const bool CashPayment::ChangeNeeded()
+ bool CashPayment::ChangeNeeded() const
 {
 	return true;
 }

@@ -9,7 +9,7 @@ public:
 	CardPayment(int paymentValue);
 	Money Payment(int paymentValue) override;
 	int returnPaymentValue() override;
-	const bool ChangeNeeded() override;
+	 bool ChangeNeeded()const override;
 	~CardPayment();
 private:
 	int m_cardInserted = 0;

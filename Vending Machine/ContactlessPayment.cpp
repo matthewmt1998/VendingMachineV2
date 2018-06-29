@@ -27,7 +27,7 @@ int ContactlessPayment::returnPaymentValue()
 	return m_ContactInserted;
 }
 
-const bool ContactlessPayment::ChangeNeeded()
+ bool ContactlessPayment::ChangeNeeded() const
 {
 	return false;
 }
