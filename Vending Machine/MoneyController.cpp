@@ -6,17 +6,17 @@
 MoneyController::MoneyController()
 {
 }
-MoneyController::MoneyController(int TMV)
+MoneyController::MoneyController(Money TMV)
 {
 	totalMonetaryValue = TMV;
 }
 
-int MoneyController::CurrentMoneyTotal()
+Money MoneyController::CurrentMoneyTotal() const
 {
 	return totalMonetaryValue;
 }
 
-int MoneyController::addMoney(int AddMoneyV)
+Money MoneyController::addMoney(Money AddMoneyV)
 {
 	totalMonetaryValue += AddMoneyV;
 	return totalMonetaryValue;

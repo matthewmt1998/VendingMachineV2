@@ -15,6 +15,12 @@ Money::~Money()
 {
 }
 
+Money& Money::operator+=(const Money & obj)
+{
+	 this->monetaryValue += obj.monetaryValue;
+	 return *this;
+}
+
 int Money::GetMonetaryValue() {
 	return monetaryValue;
 }

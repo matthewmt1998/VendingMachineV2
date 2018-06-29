@@ -4,13 +4,13 @@ class MoneyController :
 	public Money
 {
 private:
-	int totalMonetaryValue;
+	Money totalMonetaryValue;
 public:
 	MoneyController();
-	MoneyController(int TMV);
-	int CurrentMoneyTotal();
+	MoneyController(Money TMV);
+	Money CurrentMoneyTotal() const;
 	~MoneyController();
 
-	int addMoney(int AddMoneyV);
+	Money addMoney(Money AddMoneyV);
 };
 

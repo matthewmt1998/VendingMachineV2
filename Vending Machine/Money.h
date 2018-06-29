@@ -6,6 +6,7 @@ public:
 	Money(int monetaryv);
 	int GetMonetaryValue();
 	~Money();
+	Money& operator +=(const Money &obj);
 	virtual bool operator ==(const Money &obj);
 	virtual bool compare(const Money &obj);
 
