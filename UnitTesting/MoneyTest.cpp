@@ -41,6 +41,29 @@ namespace MoneyTestSystem
 			int expectedMoneyValue = 200;
 			Assert::AreEqual(expectedMoneyValue, GrabThis->GetMonetaryValue());
 		}
+		TEST_METHOD(MoneyTest_Comparing_Two_Money)
+		{
+			auto  Money1 = Money(100);
+			auto  Money2 = Money(100);
 
+			auto result = Money1.compare(Money2);
+			Assert::IsTrue(result);
+		}
+		TEST_METHOD(MoneyTest_AreEqual_Two_Money)
+		{
+			auto  Money1 = Money(100);
+			auto  Money2 = Money(100);
+
+			auto result = Money1 == Money2;
+			Assert::IsTrue(result);
+		}
+		TEST_METHOD(MoneyTest_plusEquals_Two_Money)
+		{
+			auto  Money1 = Money(100);
+			auto  Money2 = Money(200);
+
+			auto result = Money(300) == (Money1 += Money2);
+			Assert::IsTrue(result);
+		}
 	};
 }
