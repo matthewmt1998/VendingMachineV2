@@ -13,6 +13,21 @@ PaymentFactory::~PaymentFactory()
 {
 }
 
+PaymentMethod* PaymentFactory::CreatePaymentMethod(int PaymentMethod)
+{
+	switch (PaymentMethod)
+	{
+	case 0:
+		return new CashPayment();
+	case 1:
+		return new CardPayment();
+	case 2:
+		return new ContactlessPayment();
+	default:
+		throw "Error Not valid Payment Method";
+	}
+}
+
 PaymentMethod* PaymentFactory::CreatePaymentMethod(int PaymentMethod, int Amount)
 {
 	switch (PaymentMethod)

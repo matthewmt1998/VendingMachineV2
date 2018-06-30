@@ -10,6 +10,7 @@ class PaymentFactory
 public:
 	PaymentFactory();
 	~PaymentFactory();
+	PaymentMethod* CreatePaymentMethod(int PaymentMethod);
 	PaymentMethod* CreatePaymentMethod(int PaymentMethod, int Amount);
 
 	enum payMethods
