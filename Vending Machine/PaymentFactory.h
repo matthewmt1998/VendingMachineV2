@@ -10,8 +10,13 @@ class PaymentFactory
 public:
 	PaymentFactory();
 	~PaymentFactory();
-	CashPayment CreateCashPayment();
-	CardPayment CreateCardPayment();
-	ContactlessPayment CreateContactlessPayment();
+	PaymentMethod* CreatePaymentMethod(int PaymentMethod, int Amount);
+
+	enum payMethods
+	{
+		Cash,
+		Card,
+		Contactless
+	};
 };
 

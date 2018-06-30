@@ -1,6 +1,7 @@
 #pragma once
 #include "PaymentMethod.h"
-class ContactlessPayment : PaymentMethod
+class ContactlessPayment 
+	:public PaymentMethod
 {
 public:
 	ContactlessPayment();
