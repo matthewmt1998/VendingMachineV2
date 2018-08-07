@@ -24,7 +24,7 @@ Money CardPayment::Payment(int paymentValue)
 	return Money(m_cardInserted);
 }
 
-int CardPayment::returnPaymentValue()
+int CardPayment::ReturnPaymentValue()
 {
 	return m_cardInserted;
 }

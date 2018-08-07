@@ -8,7 +8,7 @@ public:
 	CardPayment();
 	CardPayment(int paymentValue);
 	Money Payment(int paymentValue) override;
-	int returnPaymentValue() override;
+	int ReturnPaymentValue() override;
 	 bool ChangeNeeded()const override;
 	~CardPayment();
 private:

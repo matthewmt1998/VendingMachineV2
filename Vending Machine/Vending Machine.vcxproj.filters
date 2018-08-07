@@ -134,9 +134,6 @@
     <ClCompile Include="ContactlessPayment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PaymentMethod.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Vending Machine.rc">

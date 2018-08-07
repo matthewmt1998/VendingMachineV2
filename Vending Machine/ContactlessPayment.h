@@ -7,7 +7,7 @@ public:
 	ContactlessPayment();
 	ContactlessPayment(int vInsertedConValue);
 	Money Payment(int paymentValue) override;
-	int returnPaymentValue() override;
+	int ReturnPaymentValue() override;
 	 bool ChangeNeeded() const override;
 	~ContactlessPayment();
 private:

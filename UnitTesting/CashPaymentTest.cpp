@@ -15,7 +15,7 @@ namespace CashPaymentTestSystem
 		{
 			auto cashPayment = CashPayment(100);
 			const int expectedValue = 100;
-			Assert::AreEqual(expectedValue, cashPayment.returnPaymentValue());
+			Assert::AreEqual(expectedValue, cashPayment.ReturnPaymentValue());
 		};
 
 		TEST_METHOD(CashPaymentTest_ExpectedBoolValueReturned)

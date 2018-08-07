@@ -22,7 +22,7 @@ Money ContactlessPayment::Payment(int paymentValue)
 	return Money(m_ContactInserted);
 }
 
-int ContactlessPayment::returnPaymentValue()
+int ContactlessPayment::ReturnPaymentValue()
 {
 	return m_ContactInserted;
 }

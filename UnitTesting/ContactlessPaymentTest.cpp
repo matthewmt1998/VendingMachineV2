@@ -15,7 +15,7 @@ namespace ContactlessPaymentTestSystem
 		{
 			auto contactlessPayment = ContactlessPayment(100);
 			const int expectedValue = 100;
-			Assert::AreEqual(expectedValue, contactlessPayment.returnPaymentValue());
+			Assert::AreEqual(expectedValue, contactlessPayment.ReturnPaymentValue());
 		};
 
 		TEST_METHOD(ContactlessPaymentTest_ExpectedBoolValueReturned)

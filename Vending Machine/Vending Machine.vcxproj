@@ -172,7 +172,6 @@
     <ClCompile Include="ChangeDispenser.cpp" />
     <ClCompile Include="ContactlessPayment.cpp" />
     <ClCompile Include="PaymentFactory.cpp" />
-    <ClCompile Include="PaymentMethod.cpp" />
     <ClCompile Include="ProductDispenser.cpp" />
     <ClCompile Include="Money.cpp" />
     <ClCompile Include="MoneyController.cpp" />

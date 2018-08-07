@@ -15,7 +15,7 @@ namespace CardPaymentTestSystem
 		{
 			auto cardPayment = CardPayment(100);
 			const int expectedValue = 100;
-			Assert::AreEqual(expectedValue, cardPayment.returnPaymentValue());
+			Assert::AreEqual(expectedValue, cardPayment.ReturnPaymentValue());
 		};
 
 		TEST_METHOD(CardPaymentTest_ExpectedBoolValueReturned)

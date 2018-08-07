@@ -26,7 +26,7 @@ Money CashPayment::Payment(int paymentValue)
 	return true;
 }
 
-int CashPayment::returnPaymentValue()
+int CashPayment::ReturnPaymentValue()
 {
 	return m_cashInserted;
 }
