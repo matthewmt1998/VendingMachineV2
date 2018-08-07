@@ -16,7 +16,7 @@ namespace PaymentFactoryTest
 			PaymentFactory pf = PaymentFactory();
 			Money expectedValue = Money(100);
 			auto const cash = pf.CreatePaymentMethod(pf.Cash, 100);
-			bool result = expectedValue.compare(cash->returnPaymentValue());
+			bool result = expectedValue.compare(cash->ReturnPaymentValue());
 			Assert::IsTrue(result);
 		}
 		
@@ -25,7 +25,7 @@ namespace PaymentFactoryTest
 			PaymentFactory pf = PaymentFactory();
 			Money expectedValue = Money(100);
 			auto const card = pf.CreatePaymentMethod(pf.Cash, 100);
-			bool result = expectedValue.compare(card->returnPaymentValue());
+			bool result = expectedValue.compare(card->ReturnPaymentValue());
 			Assert::IsTrue(result);
 		}
 
@@ -34,7 +34,7 @@ namespace PaymentFactoryTest
 			PaymentFactory pf = PaymentFactory();
 			Money expectedValue = Money(100);
 			auto const contactless = pf.CreatePaymentMethod(pf.Cash, 100);
-			bool result = expectedValue.compare(contactless->returnPaymentValue());
+			bool result = expectedValue.compare(contactless->ReturnPaymentValue());
 			Assert::IsTrue(result);
 		}
 
