@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vending Machine", "Vending Machine\Vending Machine.vcxproj", "{CEBE5BA8-2AF9-4EAC-8E3A-A5E1957E016F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vending Machine Test", "Vending Machine Test\Vending Machine Test.vcxproj", "{6BB3B238-12B2-4099-B996-EA0890582C56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CEBE5BA8-2AF9-4EAC-8E3A-A5E1957E016F} = {CEBE5BA8-2AF9-4EAC-8E3A-A5E1957E016F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

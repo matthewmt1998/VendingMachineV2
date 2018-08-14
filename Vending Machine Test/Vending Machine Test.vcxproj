@@ -152,12 +152,25 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CardPaymentsTest.cpp" />
+    <ClCompile Include="CardVerificationTest.cpp" />
+    <ClCompile Include="CashPaymentTest.cpp" />
+    <ClCompile Include="ChangeAvailableTest.cpp" />
+    <ClCompile Include="ContactlessPaymentTest.cpp" />
+    <ClCompile Include="MoneyControllerTest.cpp" />
+    <ClCompile Include="MoneyTest.cpp" />
+    <ClCompile Include="PaymentFactoryTest.cpp" />
+    <ClCompile Include="ProductManagerTests.cpp" />
+    <ClCompile Include="ProductTest.cpp" />
+    <ClCompile Include="SelectionPresentorTest.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TransactionStoreTest.cpp" />
+    <ClCompile Include="TransactionTest.cpp" />
     <ClCompile Include="Vending Machine Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

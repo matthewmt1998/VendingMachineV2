@@ -1,36 +1,30 @@
 #pragma once
 #include "stdafx.h"
-#include "CppUnitTest.h"
+#include "catch/catch.hpp"
 #include "../Vending Machine/CardPayment.h"
 #include "../Vending Machine/CardPayment.cpp"
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace CardPaymentTestSystem
 {
-	TEST_CLASS(CardPaymentTest)
+	TEST_CASE("CardPaymentTest_ExpectedIntValueReturned")
 	{
-	public:
+		auto cardPayment = CardPayment(100);
+		const int expectedValue = 100;
+		REQUIRE(expectedValue == cardPayment.ReturnPaymentValue());
+	};
 
-		TEST_METHOD(CardPaymentTest_ExpectedIntValueReturned)
-		{
-			auto cardPayment = CardPayment(100);
-			const int expectedValue = 100;
-			Assert::AreEqual(expectedValue, cardPayment.ReturnPaymentValue());
-		};
-
-		TEST_METHOD(CardPaymentTest_ExpectedBoolValueReturned)
-		{
-			auto cardPayment = CardPayment();
-			auto result = cardPayment.ChangeNeeded();
-			const bool expectedValue = false;
-			Assert::AreEqual(expectedValue, result);
-		};
-		TEST_METHOD(CardPaymentTest_PaymentFunction)
-		{
-			auto cardPayment = CardPayment();
-			Money expectedValue = Money(100);
-			bool result = expectedValue == cardPayment.Payment(100);
-			Assert::IsTrue(result);
-		};
+	TEST_CASE("CardPaymentTest_ExpectedBoolValueReturned")
+	{
+		auto cardPayment = CardPayment();
+		auto result = cardPayment.ChangeNeeded();
+		const bool expectedValue = false;
+		REQUIRE(expectedValue == result);
+	};
+	TEST_CASE("CardPaymentTest_PaymentFunction")
+	{
+		auto cardPayment = CardPayment();
+		Money expectedValue = Money(100);
+		bool result = expectedValue == cardPayment.Payment(100);
+		REQUIRE(result);
 	};
 }

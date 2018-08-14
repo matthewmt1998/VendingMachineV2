@@ -1,20 +1,12 @@
 #pragma once
 #include "stdafx.h"
-#include "CppUnitTest.h"
+#include "catch/catch.hpp"
 #include "../Vending Machine/CardVerification.h"
-#include "../Vending Machine/CardVerification.cpp"
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
 
 namespace CardVerificationTestSystem
 {
-
-	TEST_CLASS(CardVerificationTest)
-	{
-	public:
-
-		TEST_METHOD(CardVerification)
+		TEST_CASE("CardVerification")
 		{
 		};
-	};
-	
 }

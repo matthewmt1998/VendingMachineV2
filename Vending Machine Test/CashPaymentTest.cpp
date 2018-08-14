@@ -1,36 +1,32 @@
 ﻿#pragma once
 #include "stdafx.h"
-#include "CppUnitTest.h"
+#include "catch/catch.hpp"
 #include "../Vending Machine/CashPayment.h"
 #include "../Vending Machine/CashPayment.cpp"
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace CashPaymentTestSystem
 {
-	TEST_CLASS(CashPaymentTest)
-	{
-	public:
 
-		TEST_METHOD(CashPaymentTest_ExpectedIntValueReturned)
+		TEST_CASE("CashPaymentTest_ExpectedIntValueReturned")
 		{
 			auto cashPayment = CashPayment(100);
 			const int expectedValue = 100;
-			Assert::AreEqual(expectedValue, cashPayment.ReturnPaymentValue());
-		};
+			REQUIRE(expectedValue == cashPayment.ReturnPaymentValue());
+		}
 
-		TEST_METHOD(CashPaymentTest_ExpectedBoolValueReturned)
+		TEST_CASE("CashPaymentTest_ExpectedBoolValueReturned")
 		{
 			auto cashPayment = CashPayment(100);
 			auto result = cashPayment.ChangeNeeded();
 			const bool expectedValue = true;
-			Assert::AreEqual(expectedValue, result);
-		};
-		TEST_METHOD(CashPaymentTest_PaymentFunction)
+			REQUIRE(expectedValue == result);
+		}
+
+		TEST_CASE("CashPaymentTest_PaymentFunction")
 		{
 			auto cashPayment = CashPayment();
 			Money expectedValue = Money(100);
 			bool result = expectedValue == cashPayment.Payment(100);
-			Assert::IsTrue(result);
-		};
-	};
+			REQUIRE(result);
+		}
 }
