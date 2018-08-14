@@ -8,33 +8,33 @@ namespace MoneyTestSystem
 {
 		TEST_CASE("MoneyTest_Ten_Pence")
 		{
-			Money*GrabThis = new Money(10);
+			auto money = new Money(10);
 			auto expectedMoneyValue = 10;
-			REQUIRE(expectedMoneyValue == GrabThis->GetMonetaryValue());
+			REQUIRE(expectedMoneyValue == money->GetMonetaryValue());
 		}
 		TEST_CASE("MoneyTest_Twenty_Pence")
 		{
-			Money*GrabThis = new Money(20);
+			auto money = new Money(20);
 			int expectedMoneyValue = 20;
-			REQUIRE(expectedMoneyValue == GrabThis->GetMonetaryValue());
+			REQUIRE(expectedMoneyValue == money->GetMonetaryValue());
 		}
 		TEST_CASE("MoneyTest_Fifty_Pence")
 		{
-			Money*GrabThis = new Money(50);
+			auto money = new Money(50);
 			int expectedMoneyValue = 50;
-			REQUIRE(expectedMoneyValue == GrabThis->GetMonetaryValue());
+			REQUIRE(expectedMoneyValue == money->GetMonetaryValue());
 		}
 		TEST_CASE("MoneyTest_One_Pound")
 		{
-			Money*GrabThis = new Money(100);
+			auto money = new Money(100);
 			int expectedMoneyValue = 100;
-			REQUIRE(expectedMoneyValue == GrabThis->GetMonetaryValue());
+			REQUIRE(expectedMoneyValue == money->GetMonetaryValue());
 		}
 		TEST_CASE("MoneyTest_Two_Pound")
 		{
-			Money*GrabThis = new Money(200);
+			auto money = new Money(200);
 			int expectedMoneyValue = 200;
-			REQUIRE(expectedMoneyValue == GrabThis->GetMonetaryValue());
+			REQUIRE(expectedMoneyValue == money->GetMonetaryValue());
 		}
 		TEST_CASE("MoneyTest_Comparing_Two_Money")
 		{

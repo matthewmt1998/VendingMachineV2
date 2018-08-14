@@ -7,10 +7,20 @@ class ProductManager
 public:
 	ProductManager();
 	~ProductManager();
-	std::vector<Product> m_products;
+	std::vector<Product> GetProducts();
+
+	enum Drinks
+	{
+		CocaCola,
+		Sprite,
+		Pepsi,
+		DietCoke,
+		PepsiMax,
+		DietSprite
+	};
+
 
 private:
-
-	std::vector<Product> GetProducts(std::vector<Product> Prod);
+	std::vector<Product> m_products;
 };
 

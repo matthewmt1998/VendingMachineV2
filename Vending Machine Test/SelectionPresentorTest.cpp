@@ -8,27 +8,25 @@
 #include "../Vending Machine/SelectionPresentor.cpp"
 
 
-namespace ProductManagerTestSystem
+namespace SelectionPresentorTestSystem
 {
 
-		TEST_CASE("Can_SelectionPresentor_GetProductDetails")
-		{
-			SelectionPresentor SelectionP = SelectionPresentor();
-			std::string ExpectedDescription = "Coca_Cola_ID : Coca Cola has the value of 150 Product Desc: A Classic Refreshing TasteSprite_ID : Sprite has the value of 130 Product Desc: A Refreshing LemonadePespi_ID : Pepsi has the value of 150 Product Desc: Great Tasting RefreshmentDiet_Coke_ID : Diet Coke has the value of 125 Product Desc: Coke... But Diet..Pespi_Max_ID : Pespi Max has the value of 175 Product Desc: Better than NormalDiet_Sprite_ID : Diet Sprite has the value of 150 Product Desc: Sprite Diet...";
-			REQUIRE(ExpectedDescription == SelectionP.m_text);
-		}
+	TEST_CASE("SelectionPresentor_GetSelectionOfProducts")
+	{
+		SelectionPresentor selectionPresentor;
+		REQUIRE(!selectionPresentor.GetSelectionOfProducts().empty());
+	}
 
-		TEST_CASE("CAN_GET_SPECIFIC_IDs")
-		{
-			SelectionPresentor SelectionP = SelectionPresentor();
-			std::string ExpectedResult = "Coca Cola";
-			REQUIRE(ExpectedResult == SelectionP.m_products[0].GetProductName());
-		}
+	TEST_CASE("SelectionPresentor_GetProductSelectedDetails")
+	{
+		SelectionPresentor selectionPresentor;
+		REQUIRE(!selectionPresentor.GetProductSelectedDetails(ProductManager::CocaCola).empty());
 
-		TEST_CASE("CAN_GET_SPECIFIC_Details_I_want")
-		{
-			SelectionPresentor SelectionP = SelectionPresentor();
-			std::string ExpectedResult = "Coca_Cola_ID : Coca Cola has the value of 150 Product Desc: A Classic Refreshing Taste";
-			REQUIRE(ExpectedResult == SelectionP.m_products[0].GetProductDetails());
-		}
+	}
+	TEST_CASE("SelectionPresentor_GetProductSelectedDetailsISVALID")
+	{
+		SelectionPresentor selectionPresentor;
+		REQUIRE(selectionPresentor.GetProductSelectedDetails(ProductManager::CocaCola) != "invalid selection");
+
+	}
 }

@@ -16,11 +16,11 @@ Money CardPayment::Payment(int paymentValue)
 {
 	//TODO VERFIFICATION OF CARD WOULD GO HERE.. 
 
-	if (!m_cardInserted == 0)
+	if(m_cardInserted == 0)
 	{
-		return Money(m_cardInserted);
+		m_cardInserted = paymentValue;
 	}
-	m_cardInserted = paymentValue;
+	
 	return Money(m_cardInserted);
 }
 

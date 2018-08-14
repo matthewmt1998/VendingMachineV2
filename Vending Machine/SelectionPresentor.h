@@ -1,10 +1,16 @@
 #pragma once
 #include "ProductManager.h"
-class SelectionPresentor : public ProductManager 
+class SelectionPresentor
 {
 public:
+
 	SelectionPresentor();
-	std::string m_text;
+	std::vector<Product> GetSelectionOfProducts();
+	std::string GetProductSelectedDetails(ProductManager::Drinks selectedDrink);
 	~SelectionPresentor();
+
+private:
+	ProductManager m_productManager;
+
 };
 

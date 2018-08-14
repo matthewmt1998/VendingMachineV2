@@ -21,22 +21,12 @@ Money Transaction::CostOfProd()
 	return Money();
 }
 
+Money Transaction::ProductId(int productId)
+{
+	return Money();
+}
+
 std::string Transaction::TransactionStatus()
 {
 	return std::string();
 }
-
-
-//TODO
-/*
-
-mONEY IN
-
-COST
-
-PROD ID
-SUCESSFUL /FAILURE
-
-STATE 
-
-*/

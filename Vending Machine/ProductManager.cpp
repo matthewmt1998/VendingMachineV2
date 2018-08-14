@@ -16,16 +16,15 @@ ProductManager::ProductManager()
 	m_products.push_back(P5);
 	Product P6 = Product().ProdId("Diet_Sprite_ID").ProdName("Diet Sprite").ProdVal(150).ProdDesc("Sprite Diet...");
 	m_products.push_back(P6);
-	GetProducts(m_products);
-	;
 }
+
 
 
 ProductManager::~ProductManager()
 {
 }
 
-std::vector<Product> ProductManager::GetProducts(std::vector<Product> Prod)
+std::vector<Product> ProductManager::GetProducts()
 {
 	return m_products;
 }

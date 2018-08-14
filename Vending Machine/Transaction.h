@@ -8,6 +8,7 @@ public:
 	~Transaction();
 	Money MoneyEntered(Money money);
 	Money CostOfProd();
+	Money ProductId(int productId);
 	std::string TransactionStatus();
 private:
 	Money m_moneyEntered;
