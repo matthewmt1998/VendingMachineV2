@@ -1,6 +1,5 @@
 //Selection Presentor Tests
 //By Mathtew Taylor - 2018
-
 #pragma once
 #include "stdafx.h"
 #include "catch/catch.hpp"
@@ -21,12 +20,6 @@ namespace SelectionPresentorTestSystem
 	{
 		SelectionPresentor selectionPresentor;
 		REQUIRE(!selectionPresentor.GetProductSelectedDetails(ProductManager::CocaCola).empty());
-
-	}
-	TEST_CASE("SelectionPresentor_GetProductSelectedDetailsISVALID")
-	{
-		SelectionPresentor selectionPresentor;
-		REQUIRE(selectionPresentor.GetProductSelectedDetails(ProductManager::CocaCola) != "invalid selection");
 
 	}
 }

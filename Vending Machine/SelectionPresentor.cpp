@@ -18,18 +18,8 @@ std::string SelectionPresentor::GetProductSelectedDetails(ProductManager::Drinks
 {
 	auto products = m_productManager.GetProducts();
 
-	try
-	{
-		const auto details = products[selectedDrink].GetProductDetails();
-		return details;
-	}
-	catch(std::out_of_range e)
-	{
-		const auto invalid = "invalid selection";
-		std::cout << invalid;
-
-		return invalid;
-	}
+	const auto details = products[selectedDrink].GetProductDetails();
+	return details;
 }
 
 SelectionPresentor::~SelectionPresentor()
